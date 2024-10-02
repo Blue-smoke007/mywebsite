@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+    background-image: url();
+    background-size: 200%;
+    animation: moveBackground 10s ease infinite; /* Animate the background */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(fb1c79049a39a1c104bda1d6ee046ebd\ \(1\).jpg);
+    color: #f7ca58;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 30px;
+}
+
+header {
+    flex: 2;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+.intro-text h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.buttons .btn {
+    display: inline-block;
+    padding: 10px 20px ;
+    margin-right: 10px;
+    background-color: #f7ca58;
+    color: #000000;
+    margin: 20px;
+    width: -60px;
+    border: 2px solid rgba(0, 0, 0, 0.466);
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 3s;
+}
+
+.buttons .btn:hover {
+    background-color: rgba(15, 15, 15, 0.61);
+    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+.sidebar {
+    flex: 1;
+    padding-top: 50px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #f7ca58;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px;
+    position: relative;
+}
+
+.sidebar ul li a::before {
+    content: "•";
+    color: #00000000;
+    font-weight: 900;
+    margin-right: 5px;
+}
+.sidebar ul li a:hover{
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+    
+}
+.contact-info {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+}
+.note{
+    background-color: rgba(0, 0, 0, 0.192);
+    text-align: center;
+    color: #f7ca58;
+    text-align: center;
+    position:fixed;
+    width:120%;
+    bottom: 10px;
+}
+.profile-img {
+    position: relative;
+    margin: 50px;
+    top: 6px;
+    width: 205px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #333; /* Add a border */
+    border-radius: 70%;
+    transition: transform 1s ease-in-out;
+    border-radius: 100px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow */
+    filter:brightness(100%);
+    object-fit: cover;
+    z-index: 1;
+
+  }
+  
+  .profile-img:hover {
+    transform:scale(0.8)
+  }
+  .vertical-line {
+    width: 2px; /* Thickness of the line */
+    height: 320px; /* Length of the line */
+    background-color: black; /* Color of the line */
+    position: absolute; /* Or relative, depending on your layout */
+    left: 65%; /* Position it to the center or any place you want */
+    background: linear-gradient(to bottom, #f7ca58, #f0eaea); /* Gradient color */
+    border-radius: 5px; /* Rounded edges for a softer look */
+    margin: 0 auto; /* Centering */
+    box-shadow: 0 0 20px #070707; /* Glowing effect */
+    animation: glow 1.5s infinite alternate; /* Infinite glow animation */
+    margin: 0 auto;
+      }
